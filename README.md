@@ -82,7 +82,3 @@ This project is licensed under the Apache License 2.0. See the LICENSE file for 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Acknowledgements
-
-This project uses various open-source libraries, including LangChain, OpenAI, and others. Please refer to the `pyproject.toml` file for a complete list of dependencies.
