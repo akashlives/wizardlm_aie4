@@ -19,7 +19,6 @@ def export_agent(state: QAState) -> QAState:
     Raises:
         KeyError: If required fields are missing from the state.
     """
-    initial_questions: List[Dict[str, Any]] = state.get("questions", [])
     evolved_questions: List[Dict[str, Any]] = state.get("evolved_questions", [])
     answers: List[Dict[str, Any]] = state.get("answers", [])
     contexts: List[Dict[str, Any]] = state.get("contexts", [])

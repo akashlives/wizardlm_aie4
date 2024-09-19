@@ -21,7 +21,7 @@ def create_evolution_prompt(
         template = PromptTemplate(
             input_variables=["context", "instruction", "examples"],
             template="""
-            You must always output questions as strings. Format the question as a sentence or sentences ending with a question mark without any pleasantries or comments.
+            Output only the question, with no additional words, labels, or comments. The result must contain nothing but the question itself.
             {instruction}
 
             Examples:
@@ -39,6 +39,7 @@ def create_evolution_prompt(
         return PromptTemplate(
             input_variables=["question", "context", "instruction", "examples"],
             template="""
+            Output only the question, with no additional words, labels, or comments. The result must contain nothing but the question itself.
             {instruction}
 
             Examples:
